@@ -1,0 +1,241 @@
+
+
+html
+{
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 15px;
+}
+
+
+body
+{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0px;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+header 
+{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.gqitalia.it/photos/5d829c9042cda30008938b41/16:9/w_2560%2Cc_limit/GettyImages-922972450Birra.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+header::before {
+  position: absolute;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+
+
+header nav 
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    margin: 5px;
+    font-size: 0.7rem;
+}
+
+header h1
+{
+    color: rgba(255, 217, 0, 0.805);
+    font-size: 40px;
+    margin-left: auto;   
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+
+header img 
+{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  
+}
+
+header nav a:hover 
+{
+    background-color: rgba(0, 0, 0, 0.974);
+    color:
+    rgb(255, 215, 0);
+
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+header nav a 
+  {
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(255, 215, 0);
+    padding: 5px 15px; 
+    border-radius: 100px;
+    cursor: pointer;
+    text-decoration: none; 
+  }
+
+header nav ul 
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li 
+{
+    margin-left: 25px;
+    font-size: 25px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  header .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  header .logo span 
+  {
+    color: rgba(255, 217, 0, 0.805);
+    font-size: 24px;
+    margin-left: 70px;
+    margin-top: 20px;
+    
+  }
+
+  #icona img
+  {
+    display: block;
+    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    z-index: 3;
+  }
+
+  
+  #accesso p
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  form, #chatgpt
+  {
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;  
+    border-radius: 5px;
+    flex-direction: column;
+    margin-right: 600px;
+    margin-left: 600px;
+  }
+
+  #results-song 
+  {
+    text-align: center;
+    justify-content: center;
+  }
+  
+  audio
+  {
+    height: 20px;
+    width: 300;
+    margin-left: 25px;
+  }
+
+  label, #did
+  {
+    justify-content: center;
+    display: flex;
+    margin-top: 70px; 
+    margin-bottom: -10px; 
+  }
+
+  #song, #prompt
+  {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+  }
+  
+  #buttonspotify, #cercagpt
+  {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+
+  
+
+/* adattamento per telefono*/
+
+@media (max-width: 600px) 
+{
+  body 
+  {
+    font-size: 0.8rem;
+  }
+  header 
+  {
+    height: 64vh;
+    line-height: 1.2;
+  }
+
+  .logo 
+  {
+    max-width: 10%;
+    max-height: 10%;
+  }
+  
+  header h1 strong {
+    font-size: 2.5em;
+    letter-spacing: 4px;
+  }
+
+  header nav 
+  {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+
+  
+}
+
